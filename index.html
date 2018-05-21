@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Charapara - Dummy Text Generator for Malayalam</title>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="description" content="സുലോ വിന്തേന പിഷി വാട്ടിയം കിടിരാമൽ തൈവലം - അതായതുത്തമാ മലയാളത്തിൽ ഒരു ലോറം ഇപ്‌സം ജനറേറ്റർ">
+  <meta name="keywords" content="Malayalam, Design, Typography, Lorem, Ipsum, Letters, Charapara">
+  <meta name="author" content="Kerala Designers Collaborative">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Charapara - Dummy Text Generator for Malayalam" />
+  <meta property="og:description" content="സുലോ വിന്തേന പിഷി വാട്ടിയം കിടിരാമൽ തൈവലം - അതായതുത്തമാ മലയാളത്തിൽ ഒരു ലോറം ഇപ്‌സം ജനറേറ്റർ">
+  <meta property="og:url" content="https://charapara.in/" />
+  <meta property="og:image" content="https://charapara.in/img/og-meta-image.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@KDcotweets">
+  <meta name="twitter:title" content="Charapara - Dummy Text Generator for Malayalam" />
+  <meta name="twitter:description" content="സുലോ വിന്തേന പിഷി വാട്ടിയം കിടിരാമൽ തൈവലം - അതായതുത്തമാ മലയാളത്തിൽ ഒരു ലോറം ഇപ്‌സം ജനറേറ്റർ" />
+  <meta name="twitter:image" content="https://charapara.in/img/og-meta-image.jpg" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119534360-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119534360-1');
+  </script>
+</head>
+<body>
+
+  <div class="container">
+    <nav class="navbar">
+      <div class="brand-header logo-container" onmouseover="logoDefaultState()" onmouseout="randomizeLogoBlocks()">
+        <a class="logo-block logo-block-pos-1" id="logo-block-1">
+          <img src="img/cha.svg">
+        </a><a class="logo-block logo-block-pos-2" id="logo-block-2">
+          <img src="img/ra.svg">
+        </a><a class="logo-block logo-block-pos-3" id="logo-block-3">
+          <img src="img/pa.svg">
+        </a><a class="logo-block logo-block-pos-4" id="logo-block-4">
+          <img src="img/ra.svg">
+        </a>
+      </div>
+      <p class="brand-sub-header">സുലോ വിന്തേന പിഷി വാട്ടിയം കിടിരാമൽ തൈവലം.</p>
+      <p class="brand-info-header">അതായതുത്തമാ, മലയാളത്തിൽ ഒരു ലോറം ഇപ്‌സം ജനറേറ്റർ!</p>
+      <div class="social-links">
+        
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fcharapara.in%2F&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+        <iframe
+          src="https://platform.twitter.com/widgets/tweet_button.html?size=l&url=https%3A%2F%2Fcharapara.in&via=kdcotweets&related=twitterapi%2Ctwitter&text=Charapara%2C%20an%20initiative%20by%20Kerala%20Designers%20Collaborative%20is%20a%20dummy%20text%20generator%20for%20Malayalam&hashtags=Charapara%2CLoremIpsum%2CKeralaDesignersCollaborative"
+          width="79"
+          height="28"
+          title="Charapara - Dummy Text Generator for Malayalam"
+          scrolling="no" frameborder="0"
+          style="border: none; overflow: hidden;">
+        </iframe>
+
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="charapara-controls-container">
+          <div class="row">
+            <div class="col-xs-12">
+              <a class="control-btn para-control-btn control-btn-active" id="para-control-btn-1" onclick="handleParagraphChange(this, 1)">
+                <img src="img/para1.svg">
+              </a>
+              <a class="control-btn para-control-btn" id="para-control-btn-2" onclick="handleParagraphChange(this, 2)">
+                <img src="img/para2.svg">
+              </a>
+              <a class="control-btn para-control-btn" id="para-control-btn-3" onclick="handleParagraphChange(this, 3)">
+                <img src="img/para3.svg">
+              </a>
+              <a class="control-btn settings-control-btn" id="copy-control-btn" onclick="handleCopyBtnClick()">
+                <img src="img/green-check-icon.svg" class="success-icon-small hide" id="copy-control-btn-success-icon">
+                <span id="copy-control-text">
+                  അടിച്ചു മാറ്റുക
+                </span>
+              </a>
+              <a class="control-btn settings-control-btn" onclick="randomizeCharapara()" id="settings-refresh-btn">
+                <img src="img/refresh.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="charapara-outer-container">
+          <div class="charapara-text-container animated" id="charapara-text-container">
+            
+          </div>
+        </div>
+        <a class="brand-info-header center contribute-link" href="https://docs.google.com/forms/d/e/1FAIpQLSf8KR39eV0jd9zuXUMUqupjiF8hSvnNA_vBRMtfHKRFp04Qwg/viewform" target="_blank">
+          <img src="img/award.svg" class="icon-small">പണ്ഡിതനാണോ? ഇതിലേ, ഇതിലേ!</a>
+        <div class="footer center">
+          <img src="img/kdco-logomark.svg" class="kdco-logomark">
+          <div class="social-links">
+            <a target="_blank" href="https://www.behance.net/kdco"><span class="kdcoicon-brand"></span></a>
+            <a target="_blank" href="https://www.facebook.com/groups/264660753884778/"><span class="kdcoicon-brand2"></span></a>
+            <a target="_blank" href="https://twitter.com/KDCotweets"><span class="kdcoicon-brand5"></span></a>
+            <a target="_blank" href="https://www.instagram.com/kdco_official/"><span class="kdcoicon-brand3"></span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+  
+</body>
+</html>
