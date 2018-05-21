@@ -83,10 +83,33 @@ function randomizeLogoBlocks(){
 	}
 }
 
+function randomizeLogoBlocksVertical(){
+	$('.logo-block').removeClass("logo-block-pos-vertical-1 logo-block-pos-vertical-2 logo-block-pos-vertical-3 logo-block-pos-vertical-4");
+	var items = [1, 2, 3, 4];
+	var positions = [1, 2, 3, 4];
+	var curr_item;
+	var curr_pos;
+	for(var i=1; i<=4; i++){
+		var curr_item = items[Math.floor(Math.random()*items.length)];
+		var curr_pos = positions[Math.floor(Math.random()*positions.length)];
+		$('#logo-block-vertical-' + curr_item).addClass('logo-block-pos-vertical-' + curr_pos);
+		items = removeItem(items, curr_item);
+		positions = removeItem(positions, curr_pos);
+		console.log(items, positions);
+	}
+}
+
 function logoDefaultState(){
 	$('.logo-block').removeClass("logo-block-pos-1 logo-block-pos-2 logo-block-pos-3 logo-block-pos-4");
 	for(var i=1; i<=4; i++){
 		$('#logo-block-' + i).addClass('logo-block-pos-' + i);
+	}
+}
+
+function logoDefaultStateVertical(){
+	$('.logo-block').removeClass("logo-block-pos-vertical-1 logo-block-pos-vertical-2 logo-block-pos-vertical-3 logo-block-pos-vertical-4");
+	for(var i=1; i<=4; i++){
+		$('#logo-block-vertical-' + i).addClass('logo-block-pos-vertical-' + i);
 	}
 }
 
@@ -105,4 +128,5 @@ function removeItem(array, item){
 $(document).ready(function(){
 	handleParagraphChange($('#para-control-btn-1'), 1);
 	randomizeLogoBlocks();
+	randomizeLogoBlocksVertical();
 });

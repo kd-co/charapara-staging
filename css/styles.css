@@ -209,6 +209,10 @@ select{
     text-align: center;
     margin: 0px auto 20px auto;
 }
+.logo-container-vertical{
+	width: 120px;
+	min-height: 120px;
+}
 .logo-block{
 	display: inline-block;
 	margin: 0px 3px;
@@ -232,6 +236,22 @@ select{
 }
 .logo-block-pos-4{
     transform: translateX(54px);
+}
+
+.logo-block-vertical{
+	transform: translate(0px, 0px);
+}
+.logo-block-pos-vertical-1{
+    transform: translate(-54px, 0px);
+}
+.logo-block-pos-vertical-2{
+    transform: translate(0px, 0px);
+}
+.logo-block-pos-vertical-3{
+    transform: translate(-54px, 54px);
+}
+.logo-block-pos-vertical-4{
+    transform: translate(0px, 54px);
 }
 
 @media(max-width: 800px){
