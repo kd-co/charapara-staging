@@ -43,47 +43,105 @@
 
   <div class="container">
     <nav class="navbar">
-      <p>Variant 1</p>
-      <div class="brand-header logo-container" onmouseover="logoDefaultState()" onmouseout="randomizeLogoBlocks()">
-        <a class="logo-block logo-block-pos-1" id="logo-block-1">
-          <img src="img/cha.svg">
-        </a><a class="logo-block logo-block-pos-2" id="logo-block-2">
-          <img src="img/ra.svg">
-        </a><a class="logo-block logo-block-pos-3" id="logo-block-3">
-          <img src="img/pa.svg">
-        </a><a class="logo-block logo-block-pos-4" id="logo-block-4">
-          <img src="img/ra.svg">
-        </a>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p>Variant 1</p>
+          <div class="brand-header logo-container" onmouseover="logoDefaultState()" onmouseout="randomizeLogoBlocks()">
+            <a class="logo-block logo-block-pos-1" id="logo-block-1">
+              <img src="img/cha.svg">
+            </a><a class="logo-block logo-block-pos-2" id="logo-block-2">
+              <img src="img/ra.svg">
+            </a><a class="logo-block logo-block-pos-3" id="logo-block-3">
+              <img src="img/pa.svg">
+            </a><a class="logo-block logo-block-pos-4" id="logo-block-4">
+              <img src="img/ra.svg">
+            </a>
+          </div>
+
+          <p style="margin-top: 60px; display: block;">Variant 2</p>
+          <div class="brand-header logo-container logo-container-vertical" onmouseover="logoDefaultStateVertical()" onmouseout="randomizeLogoBlocksVertical()">
+            <a class="logo-block logo-block-pos-vertical-1" id="logo-block-vertical-1">
+              <img src="img/cha.svg">
+            </a><a class="logo-block logo-block-pos-vertical-2" id="logo-block-vertical-2">
+              <img src="img/ra.svg">
+            </a><a class="logo-block logo-block-pos-vertical-3" id="logo-block-vertical-3">
+              <img src="img/pa.svg">
+            </a><a class="logo-block logo-block-pos-vertical-4" id="logo-block-vertical-4">
+              <img src="img/ra.svg">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <p style="display: block;">Variant 3</p>
+          <button style="margin: 0px 0px 10px 0px;" onclick="randomizeLogoBlocksVerticalNew()">Randomize</button>
+          <div class="brand-header logo-container logo-container-vertical">
+            <a class="logo-block logo-block-pos-vertical-new-1" id="logo-block-vertical-new-1">
+              <img src="img/cha.png">
+            </a><a class="logo-block logo-block-pos-vertical-new-2" id="logo-block-vertical-new-2">
+              <img src="img/ra.png">
+            </a><a class="logo-block logo-block-pos-vertical-new-3" id="logo-block-vertical-new-3">
+              <img src="img/pa.png">
+            </a><a class="logo-block logo-block-pos-vertical-new-4" id="logo-block-vertical-new-4">
+              <img src="img/ra.png">
+            </a>
+          </div>
+
+
+          <p style="margin-top: 60px; display: block;">Variant 4</p>
+          <button style="margin: 0px 0px 10px 0px;" onclick="randomizeLogoBlocksOnClick()">Randomize</button>
+          <div style="max-width: 96px; margin: 0 auto;" id="card-wrapper" data-flip="front">
+            <div class="card-wrapper">
+              <div class="card" id="card-flip-1">
+                <div class="front">
+                  <img src="img/cha.png" class="front-image" style="max-height: 48px;">
+                </div>
+                <div class="back">
+                  <img src="img/ra.png" class="back-image" style="max-height: 48px;">
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrapper">
+              <div class="card" id="card-flip-2">
+                <div class="front">
+                  <img src="img/ra.png" class="front-image" style="max-height: 48px;">
+                </div>
+                <div class="back">
+                  <img src="img/pa.png" class="back-image" style="max-height: 48px;">
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrapper">
+              <div class="card" id="card-flip-3">
+                <div class="front">
+                  <img src="img/pa.png" class="front-image" style="max-height: 48px;">
+                </div>
+                <div class="back">
+                  <img src="img/cha.png" class="back-image" style="max-height: 48px;">
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrapper">
+              <div class="card" id="card-flip-4">
+                <div class="front">
+                  <img src="img/ra.png" class="front-image" style="max-height: 48px;">
+                </div>
+                <div class="back">
+                  <img src="img/cha.png" class="back-image" style="max-height: 48px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <p style="margin-top: 60px; display: block;">Variant 2</p>
-      <div class="brand-header logo-container logo-container-vertical" onmouseover="logoDefaultStateVertical()" onmouseout="randomizeLogoBlocksVertical()">
-        <a class="logo-block logo-block-pos-vertical-1" id="logo-block-vertical-1">
-          <img src="img/cha.svg">
-        </a><a class="logo-block logo-block-pos-vertical-2" id="logo-block-vertical-2">
-          <img src="img/ra.svg">
-        </a><a class="logo-block logo-block-pos-vertical-3" id="logo-block-vertical-3">
-          <img src="img/pa.svg">
-        </a><a class="logo-block logo-block-pos-vertical-4" id="logo-block-vertical-4">
-          <img src="img/ra.svg">
-        </a>
-      </div>
 
 
 
-      <p style="margin-top: 60px; display: block;">Variant 3</p>
-      <button style="margin: 0px 0px 10px 0px;" onclick="randomizeLogoBlocksVerticalNew()">Randomize</button>
-      <div class="brand-header logo-container logo-container-vertical">
-        <a class="logo-block logo-block-pos-vertical-new-1" id="logo-block-vertical-new-1">
-          <img src="img/cha.png">
-        </a><a class="logo-block logo-block-pos-vertical-new-2" id="logo-block-vertical-new-2">
-          <img src="img/ra.png">
-        </a><a class="logo-block logo-block-pos-vertical-new-3" id="logo-block-vertical-new-3">
-          <img src="img/pa.png">
-        </a><a class="logo-block logo-block-pos-vertical-new-4" id="logo-block-vertical-new-4">
-          <img src="img/ra.png">
-        </a>
-      </div>
 <!--       <p class="brand-sub-header">സുലോ വിന്തേന പിഷി വാട്ടിയം കിടിരാമൽ തൈവലം.</p>
       <p class="brand-info-header">അതായതുത്തമാ, മലയാളത്തിൽ ഒരു ലോറം ഇപ്‌സം ജനറേറ്റർ!</p>
       <div class="social-links">

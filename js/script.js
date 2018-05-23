@@ -115,6 +115,43 @@ function randomizeLogoBlocksVerticalNew(){
 	}
 }
 
+function randomizeLogoBlocksOnClick(){
+	$('.card').toggleClass('card-flip-vertical');
+
+	var panels = [1, 2, 3, 4];
+
+	var imgs = [
+		{ src: 'img/cha.png'},
+		{ src: 'img/ra.png'},
+		{ src: 'img/pa.png'},
+		{ src: 'img/ra.png'},
+	];
+
+	var img, temp_item;
+
+	setTimeout(function(){
+		for(var i=1; i<=4; i++){
+			if($('#card-wrapper').data('flip')==='front'){
+				$('#card-wrapper').data('flip', 'back');
+			} else {
+				$('#card-wrapper').data('flip', 'front');
+			}
+			
+			temp_item = panels[Math.floor(Math.random()*panels.length)];
+
+			console.log(temp_item, imgs[temp_item-1]);
+
+			$('#card-flip-' + i).find('.back-image').attr('src', imgs[temp_item-1].src);
+
+			panels = removeItem(panels, temp_item);
+			
+
+			console.log("After deletion, ", panels);
+
+		}
+	}, 100);	
+}
+
 function logoDefaultState(){
 	$('.logo-block').removeClass("logo-block-pos-1 logo-block-pos-2 logo-block-pos-3 logo-block-pos-4");
 	for(var i=1; i<=4; i++){
