@@ -369,14 +369,24 @@ select{
 }
 
 /* flipping the card on hover */
-.card-flip-vertical{
+.card-flip-vertical-1{
 	-ms-transform: rotateX(-180deg); /* IE 9 */
    	-webkit-transform: rotateX(-180deg); /* Safari */
     transform: rotateX(-180deg);
 }
 
-.card-flip-vertical .back{
+.card-flip-vertical-2{
+	-ms-transform: rotateX(180deg); /* IE 9 */
+   	-webkit-transform: rotateX(180deg); /* Safari */
+    transform: rotateX(180deg);
+}
+
+.card-flip-vertical-1 .back{
 	transform: rotateX(180deg);
+}
+
+.card-flip-vertical-2 .back{
+	transform: rotateX(-180deg);
 }
 
 
